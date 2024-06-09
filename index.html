@@ -166,7 +166,7 @@ p.big {
 <div class="background">
 <div class="window glass active" style="max-width: 1000px">
   <div class="title-bar">
-    <div class="title-bar-text">Welcome to my website! Make sure your browser is maximized and enable Autoplay!</div>
+    <div class="title-bar-text">Welcome to my website! Make sure your browser is maximized and Autoplay is recommended for sounds and music!</div>
 	    <div class="title-bar-controls">
       <button aria-label="Minimize"></button>
       <button aria-label="Maximize"></button>
@@ -179,7 +179,7 @@ p.big {
   <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#outerloper.html" onclick="audio.play();">Outerloper</a></li>
   <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="blogs.html" onclick="audio.play();">Blogs</a></li>
   <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#videos.html" onclick="audio.play();">Films By Quartz (Videos)</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#audios.html" onclick="audio.play();">Audios</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="audios.html" onclick="audio.play();">Audios</a></li>
   <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#projects.html" onclick="audio.play();">Projects</a></li>
   <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#kugee.html" onclick="audio.play();">Kugee's Lost Videos</a></li>
   <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#about.html" onclick="audio.play();">About</a></li>
@@ -198,7 +198,6 @@ p.big {
 			  <center>
 <img src="me.jpg" alt="Quartzmaven, the Male_02 persona" width="300em" height="300em">
       <p><b>Welcome to Quartzmaven's Crappy Website!</b></p>
-	  <br>
 	  <p>In here, every content so far made by me have been moved here!</p>
 	  <p>All videos, all projects, all content!</p>
 	  <br>
@@ -209,6 +208,16 @@ p.big {
 	  			<div class="scrolly">
 			<h3 style="white-space:nowrap;">I LOVE WEBSITE! • Headlines: Quartz Gone Windows 7 | Brainrot Gang • A MOVING TEXT? • Test • Check Out My Projects - Follow My Socials - See My Useless Blogs! • Get Wi-Fi anywhere you go! • <span style="color:#FF0000">B</span><span style="color:#FF3700">R</span><span style="color:#FF6D00">O</span> <span style="color:#FFA400">G</span><span style="color:#FFDB00">O</span><span style="color:#EDFF00">T</span> <span style="color:#B6FF00">T</span><span style="color:#80FF00">H</span><span style="color:#49FF00">E</span> <span style="color:#12FF00">R</span><span style="color:#00FF24">A</span><span style="color:#00FF5B">I</span><span style="color:#00FF92">N</span><span style="color:#00FFC8">B</span><span style="color:#00FFFF">O</span><span style="color:#00C8FF">W</span> <span style="color:#0092FF">T</span><span style="color:#005BFF">E</span><span style="color:#0024FF">X</span><span style="color:#1200FF">T</span> <span style="color:#4900FF">E</span><span style="color:#7F00FF">P</span><span style="color:#B600FF">I</span><span style="color:#ED00FF">C</span> <span style="color:#FF00DB">W</span><span style="color:#FF00A4">I</span><span style="color:#FF006D">N</span><span style="color:#FF0037">!</span></h3>
 			</div>
+				  <p align="center">Music: Windows 7 Remix 2012 by SilverWolf</p>
+				  <button onclick="enableMute()" type="button">Mute sound</button>
+<button onclick="disableMute()" type="button">Enable sound</button>
+<br> 
+<br> 
+
+<audio id="win7remix" width="320" height="176" hidden autoplay loop muted>
+  <source src="assets/index/win7remixbysilverwolf.mp3" type="audio/mp3">
+  Your browser does not support HTML5 video.
+</audio>
 				  <p align="left">Wallpaper Source: WallpaperBoat</p>
 			</center>
 			</article>
@@ -262,6 +271,23 @@ p.big {
 	audio.src = "assets/index/nav.mp3";
 </script>
 
+<script>
+let vid = document.getElementById("win7remix");
+
+function enableMute() { 
+  vid.muted = true;
+} 
+
+function disableMute() { 
+  vid.muted = false;
+} 
+
+function checkMute() { 
+  alert(vid.muted);
+} 
+</script> 
+
+
   </center>
 
 <br>
@@ -308,6 +334,8 @@ p.big {
   </div>
 </div>
 </center>
+
+
 
 </body>
 </html>
