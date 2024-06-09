@@ -10,7 +10,7 @@
          This makes it easier to make new pages for your site. -->
     <link href="neocitiestemplate_files/style.css" rel="stylesheet" type="text/css" media="all">
 	<link rel="stylesheet" href="https://unpkg.com/7.css">
-	<script src="stylesheet" href="script.js" crossorigin="anonymous"></script>
+	<script src="script.js" crossorigin="anonymous"></script>
 <style>
 .container {
   position: relative;
@@ -80,6 +80,52 @@
  margin: 10%;
  }
 	</style>
+	<style>
+.scrolly {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.scrolly h3 {
+ font-size: 2em;
+ color: black;
+ position: absolute;
+ width:fitcontent;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scrolly 30s linear infinite;
+ -webkit-animation: scrolly 30s linear infinite;
+ animation: scrolly 30s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scrolly {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scrolly {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scrolly {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
   </head>
   <body>
   
@@ -110,15 +156,17 @@
   <li role="menuitem" tabindex="0">About</li>
 </ul>
     <div class="window-body has-space">
-	<section class="tabs">
-    <menu role="tablist" aria-label="quartztabs">
-      <button role="tab" aria-controls="smallinfo" aria-selected="true">Small Info</button>
-      <button role="tab" aria-controls="announcements" aria-selected="false">Announcements</button>
-      <button role="tab" aria-controls="whywin7" aria-selected="false">Why Windows 7?</button>
-    </menu>
-	
-	    <article role="tabpanel" id="smallinfo">
-	  <p>Quartz, pls put image here!</p>
+    <div>
+        <section class="tabs">
+            <menu role="tablist" aria-label="Tabs Template">
+                <button role="tab" aria-controls="tab-A" aria-selected="true">Small Info</button>
+                <button role="tab" aria-controls="tab-B" aria-selected="false">Announcements</button>
+                <button role="tab" aria-controls="tab-C" aria-selected="false">Why Windows 7?</button>
+                <button role="tab" aria-controls="tab-D" aria-selected="false">Why moving host?</button>
+                <button role="tab" aria-controls="tab-E" aria-selected="false">Clock</button>
+            </menu>
+            <article role="tabpanel" id="tab-A">
+<img src="me.jpg" alt="Quartzmaven, the Male_02 persona" width="300em" height="300em">
       <p><b>Welcome to Quartzmaven's Crappy Website!</b></p>
 	  <br>
 	  <p>In here, every content so far made by me have been moved here!</p>
@@ -128,37 +176,17 @@
 	  <p>Videos have been hosted on Dailymotion in private setting, and Google Drive, for now.</p>
 	  <p>There's no other good video hosting out there.</p>
 	  <p></p>
-    </article>
-	
-	<article role="tabpanel" hidden id="announcements" hidden="true">
-	  <p>Quartz, pls put image here532!</p>
-      <p><b>Welcome to Quartzmaven's Crappy Website!</b></p>
-	  <br>
-	  <p>In here, every content so far made by me have been moved here!</p>
-	  <p>All videos, all projects, all content!</p>
-	  <br>
-	  <p><b>FUCK YOUTUBE!</b></p>
-	  <p>Videos have been hosted on Dailymotion in private setting, and Google Drive, for now.</p>
-	  <p>There's no other good video hosting out there.</p>
-	  <p></p>
-    </article>
-	
-	<article role="tabpanel" hidden id="whywin7" hidden="true">
-	  <p>Quartz, pls put ima641146ge here!</p>
-      <p><b>Welcome to Quartzmaven's Crappy Website!</b></p>
-	  <br>
-	  <p>In here, every content so far made by me have been moved here!</p>
-	  <p>All videos, all projects, all content!</p>
-	  <br>
-	  <p><b>FUCK YOUTUBE!</b></p>
-	  <p>Videos have been hosted on Dailymotion in private setting, and Google Drive, for now.</p>
-	  <p>There's no other good video hosting out there.</p>
-	  <p></p>
-
-    </article>
-    </ul>
-	</section>
-  </div>
+	  			<div class="scrolly">
+			<h3 style="white-space:nowrap;">I LOVE WEBSITE! • Headlines: Quartz Gone Windows 7 | Brainrot Gang • A MOVING TEXT? • What the hell happened to Michigan? • Check Out My Projects - Follow My Socials - See My Useless Blogs! • Get Wi-Fi anywhere you go! • <span style="color:#FF0000">B</span><span style="color:#FF3700">R</span><span style="color:#FF6D00">O</span> <span style="color:#FFA400">G</span><span style="color:#FFDB00">O</span><span style="color:#EDFF00">T</span> <span style="color:#B6FF00">T</span><span style="color:#80FF00">H</span><span style="color:#49FF00">E</span> <span style="color:#12FF00">R</span><span style="color:#00FF24">A</span><span style="color:#00FF5B">I</span><span style="color:#00FF92">N</span><span style="color:#00FFC8">B</span><span style="color:#00FFFF">O</span><span style="color:#00C8FF">W</span> <span style="color:#0092FF">T</span><span style="color:#005BFF">E</span><span style="color:#0024FF">X</span><span style="color:#1200FF">T</span> <span style="color:#4900FF">E</span><span style="color:#7F00FF">P</span><span style="color:#B600FF">I</span><span style="color:#ED00FF">C</span> <span style="color:#FF00DB">W</span><span style="color:#FF00A4">I</span><span style="color:#FF006D">N</span><span style="color:#FF0037">!</span></h3>
+			</div>
+			</article>
+            <article role="tabpanel" id="tab-B" hidden="true">
+			</article>
+            <article role="tabpanel" id="tab-C" hidden="true">Tab C is active</article>
+            <article role="tabpanel" id="tab-D" hidden="true">Tab D</article>
+            <article role="tabpanel" id="tab-E" hidden="true">Tab D</article>
+        </section>
+    </div>
   
   
   <div class="status-bar">
@@ -171,7 +199,7 @@
 </center>
 
 
-
+<script src="script.js"></script>i
 
 </body>
 </html>
