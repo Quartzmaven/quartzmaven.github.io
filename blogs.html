@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartzmaven</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="template_files/style.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="https://unpkg.com/xp.css">
+<link rel="stylesheet" href="xpfont.css">
+
+<style>
+
+
+
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#lifting-guy {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-60%, -12%);
+}
+  
+.bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+.bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+ body {
+ margin: 5%;
+ }
+ 
+	</style>
+	<style>
+.scrolly {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.scrolly h3 {
+ font-size: 2em;
+ color: black;
+ position: absolute;
+ width:fitcontent;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scrolly 30s linear infinite;
+ -webkit-animation: scrolly 30s linear infinite;
+ animation: scrolly 30s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scrolly {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scrolly {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scrolly {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+  </head>
+  <body style="background-color:#0646A2">
+<audio src="assets/blogs/xprtmlogon.mp3" style="display:none;" autoplay></audio>
+
+  
+<center>
+<div class="window" style="width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">A Window With Stuff In It</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <p style="font-family:Pixelated MS Sans Serif">There's so much room for activities!</p>
+  </div>
+</div>
+</center>
+
+</body>
+</html>
