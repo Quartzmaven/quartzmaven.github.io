@@ -175,24 +175,24 @@ p.big {
   </div>
   <div class="window-body">
     <ul role="menubar">
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="index.html">Home</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#outerloper.html">Outerloper</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#blogs.html">Blogs</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#videos.html">Films By Quartz (Videos)</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#audios.html">Audios</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#projects.html">Projects</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#kugee.html">Kugee's Lost Videos</a></li>
-  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#about.html">About</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="index.html" onclick="audio.play();">Home</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#outerloper.html" onclick="audio.play();">Outerloper</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#blogs.html" onclick="audio.play();">Blogs</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#videos.html" onclick="audio.play();">Films By Quartz (Videos)</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#audios.html" onclick="audio.play();">Audios</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#projects.html" onclick="audio.play();">Projects</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#kugee.html" onclick="audio.play();">Kugee's Lost Videos</a></li>
+  <li role="menuitem" tabindex="0"><a style="text-decoration:none; color:black;" href="#about.html" onclick="audio.play();">About</a></li>
 </ul>
     <div class="window-body has-space">
     <div>
         <section class="tabs">
             <menu role="tablist" aria-label="Tabs Template">
-                <button role="tab" aria-controls="tab-A" aria-selected="true">Small Info</button>
-                <button role="tab" aria-controls="tab-B" aria-selected="false">Announcements</button>
-                <button role="tab" aria-controls="tab-C" aria-selected="false">Why Windows 7?</button>
-                <button role="tab" aria-controls="tab-D" aria-selected="false">Why moving host?</button>
-                <button role="tab" aria-controls="tab-E" aria-selected="false">Misc</button>
+                <button role="tab" aria-controls="tab-A" aria-selected="true" onclick="audio.play();">Small Info</button>
+                <button role="tab" aria-controls="tab-B" aria-selected="false" onclick="audio.play();">Announcements</button>
+                <button role="tab" aria-controls="tab-C" aria-selected="false" onclick="audio.play();">Why Windows 7?</button>
+                <button role="tab" aria-controls="tab-D" aria-selected="false" onclick="audio.play();">Why moving host?</button>
+                <button role="tab" aria-controls="tab-E" aria-selected="false" onclick="audio.play();">Misc</button>
             </menu>
             <article role="tabpanel" id="tab-A">
 			  <center>
@@ -236,19 +236,19 @@ p.big {
             <article role="tabpanel" id="tab-E" hidden="true">
     
     <a style="text-decoration:none" href="https://steamcommunity.com/id/quartzmaven/">
-      <img src="assets/index/steam.gif" title="My Steam Page">
+      <img src="assets/index/steam.gif" title="My Steam Page" onclick="audio.play();">
     </a>
     
     <a style="text-decoration:none" href="https://www.youtube.com/channel/UCgetpVZJMav3UwxsE9IYsFQ">
-      <img src="assets/index/youtube.gif" title="My YouTube (REST IN PISS)">
+      <img src="assets/index/youtube.gif" title="My YouTube (REST IN PISS)" onclick="audio.play();">
     </a>
     
     <a style="text-decoration:none" href="https://bsky.app/profile/quartzmaven.bsky.social">
-      <img src="assets/index/bluesky.gif" title="My BlueSky Page">
+      <img src="assets/index/bluesky.gif" title="My BlueSky Page" onclick="audio.play();">
     </a>
     
     <a style="text-decoration:none" href="https://spacehey.com/quartzmaven">
-      <img src="assets/index/spacehey.gif" title="My SpaceHey Page">
+      <img src="assets/index/spacehey.gif" title="My SpaceHey Page" onclick="audio.play();">
     </a>
 			
 			</article>
@@ -256,6 +256,12 @@ p.big {
     </div>
 
 <script src="script.js"></script>
+
+<script type="text/javascript">
+	const audio = new Audio();
+	audio.src = "assets/index/nav.mp3";
+</script>
+
   </center>
 
 <br>
@@ -273,9 +279,9 @@ p.big {
   </div>
   <div class="window-body has-space">
   <a style="text-decoration:none" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3058063563">
-	<img src="assets/index/lambda.gif" title="Download Lambda Players Today!" width="300em" height="300em"></a>
-	<img src="assets/index/science.gif" title="Science Bitch!" width="300em" height="300em">
-	<img src="assets/index/burger.gif" title="Burger" width="300em" height="300em">
+	<img src="assets/index/lambda.gif" title="Download Lambda Players Today!" width="300em" height="300em" onclick="audio.play();"></a>
+	<img src="assets/index/science.gif" title="Science Bitch!" width="300em" height="300em" onclick="audio.play();">
+	<img src="assets/index/burger.gif" title="Burger" width="300em" height="300em" onclick="audio.play();">
 </div>
   </div>
 </div>
